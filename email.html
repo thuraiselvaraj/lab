@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" id="ename" placeholder="Enter Your emailid"></br>
+        <input type="button" value="Submit" onclick="sam()">
+    <script>
+        function sam(){
+            var b=document.querySelector("#ename").value;
+            atp="@"
+            dot="."
+            le=b.toString().length
+            if(b.includes(atp) && b.includes(dot)){
+                p=b.indexOf(atp);
+                d=b.indexOf(dot)+1;
+               
+            if(p>1){
+               
+                if(d==le-3){
+                    
+                    alert("valid mail");
+                } 
+                else{
+                    alert(".com is at wrong pos");
+                }
+            }
+
+            }
+            else{
+                alert("Not Valid Mail");
+            }
+        }
+    </script>   
+</body>
+</html>
